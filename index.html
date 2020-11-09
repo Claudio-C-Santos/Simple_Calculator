@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <form>
+        <label for="operand1">Operand 1:</label>
+        <input type="number" step="0.01" id="operand1"><br>
+        <label for="operand2">Operand 2:</label>
+        <input type="number" step="0.01" id="operand2"><br>
+        <label for="operator">Operator:</label>
+        <select name="operator" id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="*">*</option>
+        </select><br>
+        <input type="submit" value="Calculate" onclick="run(); return false;">
+        <input type="reset">
+    </form>
+    <p id="output"></p>
+<script src="calculator.js"></script>
+</body>
+</html>
