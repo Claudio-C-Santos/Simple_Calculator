@@ -28,7 +28,7 @@ function run() {
         var multiply = calculator.multiply(parseFloat(num1),parseFloat(num2));
         document.getElementById("output").innerHTML = multiply; 
     } else if (operator == "/") {
-        var divide = calculator.divide(parseFloat(num1),parseFloat(num2));
+        var divide = calculator.divide(parseFloat(num1)/parseFloat(num2));
         document.getElementById("output").innerHTML = divide;
     } else {
         document.getElementById("output").innerHTML = "Error";
